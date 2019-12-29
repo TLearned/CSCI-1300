@@ -1,0 +1,61 @@
+class AwardWinners
+{
+    private:
+    string name[];
+    int year[];
+    
+    public:
+    AwardWinners();
+    AwardWinners(name[], year[]);
+    int ReadFile(string filename);
+    string getWinnerName(int winningYear);
+    int getWinningYear(string winner);
+};
+
+AwardWinners :: AwardWinners()
+    {
+        string name[20];
+        std::fill(name, name + 20, "");
+        int year[20];
+        std::fill(year, year + 20, 0);
+    }
+    
+    AwardWinners :: AwardWinners(aname[20], ayear[20])
+        {
+            name[20] = aname[20];
+            year[20] = ayear[20];
+        }
+    
+    int AwardWinners :: ReadFile(string filename)
+    {
+        string tempString;
+        
+        ifstream file;
+        file.open(filename);
+        
+        if(file.is_open())
+        {
+            while(getline(file, tempString))
+            {
+                if(tempString.length() > 1)
+                {
+                    string tempArray[2];
+                    split(tempString, '@', tempArray, 2);
+                }
+            }
+        }
+        else
+        {
+            return -1;
+        }
+    }
+    
+    string AwardWinners :: getWinnerName(int winningYear);
+    {
+        return tempArray[0];
+    }
+    
+    int AwardWinners :: getWinningYear(string winner)
+    {
+        return tempArray[1];
+    }

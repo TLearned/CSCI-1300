@@ -1,0 +1,6 @@
+return 1 + foo(input.substr1)
+called 3 times so returns 3
+
+MAKE TREES TO THINK IT THROUGH
+
+data abstraction is making it look different for people who shouldn't see it

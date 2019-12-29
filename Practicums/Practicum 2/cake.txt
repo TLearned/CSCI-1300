@@ -1,0 +1,3 @@
+Aloo pie, 13, 46.34
+Apple pie, 23, 23.33
+Apple strudel, 11.50, 23.99
